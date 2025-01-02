@@ -62,7 +62,10 @@ export class Vote extends Component {
 
         <button onClick={this.getResults}></button>
 
-        <p>The biggest count: {this.state.theBiggest}</p>
+        <p>
+          The biggest count:{" "}
+          {this.state.theBiggest ? this.state.theBiggest : ""}
+        </p>
       </div>
     );
   }
